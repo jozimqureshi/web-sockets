@@ -43,7 +43,7 @@ This project is a **visual and functional demo** of the WebSocket communication 
 ## 📦 Installation
 
 # Clone the repo
-git clone https://github.com/your-username/websocket-mall-analogy.git
+git clone https://github.com/jozimqureshi/web-sockets.git
 cd websocket-mall-analogy
 
 # Install server dependencies
