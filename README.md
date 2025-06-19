@@ -2,8 +2,6 @@
 
 This project is a **visual and functional demo** of the WebSocket communication cycle between a client and server, explained through a **shopping mall analogy**. It's designed for easy understanding of WebSocket fundamentals using Express (Node.js) on the backend and plain JavaScript with Bootstrap on the frontend.
 
-This is also to practise Git and GitHub.
-
 ---
 
 ## 🚀 Features
