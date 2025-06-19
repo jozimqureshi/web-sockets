@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="text-center">🧠 WebSocket Lifecycle Demo</h1>
+    <p class="text-center">
+        This demo illustrates how a WebSocket connection works between a client and server,<br>
+        using a real-life shopping mall scenario where a customer interacts with store staff.
+    </p>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">🧠 WebSocket: Full Lifecycle with Technical and Real-Life Analogies</h2>
+
+        <!-- Header Row -->
+        <div class="row bg-dark text-white fw-bold py-2 border">
+            <div class="col-1 text-center">🔢 Step</div>
+            <div class="col-3">📜 WebSocket Code</div>
+            <div class="col-4">💬 Technical Message</div>
+            <div class="col-4">🏪 Shopping Analogy</div>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="row border align-items-start py-3">
+            <div class="col-1 text-center">1️⃣</div>
+            <div class="col-3"><code>new WebSocket(...)</code></div>
+            <div class="col-4">
+                Client is making a connection request to the server.<br>
+                🔁 Attempting handshake.
+            </div>
+            <div class="col-4">
+                🛒 Customer walks up to the mall entrance, trying to get in.
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="row border align-items-start py-3">
+            <div class="col-1 text-center">2️⃣</div>
+            <div class="col-3"><code>socket.onopen</code></div>
+            <div class="col-4">
+                ✅ Client confirms the connection is open.<br>
+                Client is now ready to send/receive messages.
+            </div>
+            <div class="col-4">
+                🚪 The door opens and the customer steps into the store.
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="row border align-items-start py-3">
+            <div class="col-1 text-center">3️⃣</div>
+            <div class="col-3"><code>wss.on("connection")</code></div>
+            <div class="col-4">
+                ✅ Server accepts connection from a new client.<br>
+                The WebSocket handshake is successful.
+            </div>
+            <div class="col-4">
+                👀 Staff sees a new customer walk in and greets them.
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="row border align-items-start py-3">
+            <div class="col-1 text-center">4️⃣</div>
+            <div class="col-3"><code>socket.send("Hello from Client")</code></div>
+            <div class="col-4">
+                📤 Client sends a message to the server.<br>
+                Data is transmitted over WebSocket.
+            </div>
+            <div class="col-4">
+                🙋‍♂️ Customer says: "Hello! Do you have this item?"
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="row border align-items-start py-3">
+            <div class="col-1 text-center">5️⃣</div>
+            <div class="col-3"><code>ws.on("message")</code></div>
+            <div class="col-4">
+                📥 Server receives the message from client.<br>
+                Ready to process or respond.
+            </div>
+            <div class="col-4">
+                👂 Staff hears the customer's question.
+            </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="row border align-items-start py-3">
+            <div class="col-1 text-center">6️⃣</div>
+            <div class="col-3"><code>ws.send("Hello from Server")</code></div>
+            <div class="col-4">
+                📤 Server sends a reply to the client.<br>
+                The response is on its way.
+            </div>
+            <div class="col-4">
+                🧾 Staff replies: "Yes, it’s in aisle 3!"
+            </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="row border align-items-start py-3">
+            <div class="col-1 text-center">7️⃣</div>
+            <div class="col-3"><code>socket.onmessage</code></div>
+            <div class="col-4">
+                📥 Client receives a message from the server.<br>
+                Can now update UI or take action.
+            </div>
+            <div class="col-4">
+                😊 Customer hears the answer and walks to aisle 3.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
